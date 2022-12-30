@@ -1,0 +1,49 @@
+#!/bin/bash
+#SBATCH -A uot185
+#SBATCH --job-name="imdb"
+#SBATCH --output="imdb.distr.out"
+#SBATCH --partition=compute
+## allocate 3 nodes for the Hadoop cluster: 3 datanodes, from which 1 is namenode
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=5G
+#SBATCH --export=ALL 
+#SBATCH --time=10
+
+export HADOOP_CONF_DIR=/home/$USER/expanse
+
+module load hadoop
+module load openjdk
+
+SW=/expanse/lustre/projects/uot182/fegaras
+export HADOOP_HOME=$SW/hadoop-3.2.2
+export MYHADOOP_HOME=$SW/myhadoop
+PATH="$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$MYHADOOP_HOME/bin:$PATH"
+
+
+
+myhadoop-configure.sh -s /scratch/$USER/job_$SLURM_JOBID
+
+start-all.sh
+
+hdfs dfs -rm -r /user/$USER/*
+hdfs dfs -mkdir -p /user/$USER
+#hdfs dfs -mkdir -p /user/$USER/input1
+#echo "Directory created"
+
+hdfs dfs -mkdir -p /user/$USER/input2
+hdfs dfs -put ~/project3/title.basics.tsv /user/$USER/input2
+hdfs dfs -put ~/project3/imdb00-title-actors.csv /user/$USER/input2
+hdfs dfs -put ~/project3/title.crew.tsv /user/$USER/input2
+
+##echo "Transferred to directory"
+
+hadoop jar MainRunner.jar MainRunner /user/$USER/input2/title.basics.tsv /user/$USER/input2/imdb00-title-actors.csv /user/$USER/input2/title.crew.tsv /user/$USER/output
+
+rm -rf output-distr
+mkdir output-distr
+hdfs dfs -get /user/$USER/output/* /home/archananikam/project3/output-distr
+
+
+stop-all.sh
+myhadoop-cleanup.sh

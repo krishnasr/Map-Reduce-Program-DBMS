@@ -1,0 +1,21 @@
+#!/bin/bash
+
+module load hadoop
+module load openjdk
+
+SW=/expanse/lustre/projects/uot182/fegaras
+export HADOOP_HOME=$SW/hadoop-3.2.2
+PATH="$HADOOP_HOME/bin:$PATH"
+
+rm -rf MainRunner.jar
+rm -rf classes
+mkdir -p classes
+
+
+javac -d classes -cp classes:`hadoop classpath` MainRunner.java
+jar cf MainRunner.jar -C classes .
+
+chmod -R 750 classes
+chmod -R 750 MainRunner.jar
+echo "Compilation completed."
+

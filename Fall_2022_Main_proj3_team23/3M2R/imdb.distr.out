@@ -1,0 +1,492 @@
+myHadoop: Using HADOOP_HOME=/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2
+myHadoop: Using MH_SCRATCH_DIR=/scratch/archananikam/job_17927180
+myHadoop: Using JAVA_HOME=/cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/openjdk-11.0.2-ysua3xn34v6hnko3reiffhlg2r2q7fol
+myHadoop: Generating Hadoop configuration in directory in /home/archananikam/expanse...
+myHadoop: Backing up old config dir to /home/archananikam/expanse.5...
+renamed '/home/archananikam/expanse' -> '/home/archananikam/expanse.5'
+myHadoop: Designating exp-9-20 as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+exp-9-20
+WARNING: /scratch/archananikam/job_17927180/pids does not exist. Creating.
+WARNING: /scratch/archananikam/job_17927180/logs does not exist. Creating.
+2022-12-06 20:03:39,887 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = exp-9-20/198.202.102.11
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 3.2.2
+STARTUP_MSG:   classpath = /home/archananikam/expanse:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsp-api-2.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jul-to-slf4j-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-api-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-kms-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okio-1.6.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-all-4.1.48.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/java-util-1.9.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-base-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/json-io-2.5.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/fst-2.50.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/objenesis-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-client-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/snakeyaml-1.16.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/javax.inject-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-router-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-registry-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-tests-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-submarine-3.2.2.jar
+STARTUP_MSG:   build = Unknown -r 7a3bc90b05f257c8ace2f76d74264906f0f7a932; compiled by 'hexiaoqiao' on 2021-01-03T09:26Z
+STARTUP_MSG:   java = 11.0.2
+************************************************************/
+2022-12-06 20:03:39,893 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2022-12-06 20:03:39,945 INFO namenode.NameNode: createNameNode [-format, -nonInteractive, -force]
+2022-12-06 20:03:40,262 INFO common.Util: Assuming 'file' scheme for path /scratch/archananikam/job_17927180/namenode_data in configuration.
+2022-12-06 20:03:40,262 INFO common.Util: Assuming 'file' scheme for path /scratch/archananikam/job_17927180/namenode_data in configuration.
+Formatting using clusterid: CID-93b50246-1d43-4461-a382-55f923629c02
+2022-12-06 20:03:40,283 INFO namenode.FSEditLog: Edit logging is async:true
+2022-12-06 20:03:40,301 INFO namenode.FSNamesystem: KeyProvider: null
+2022-12-06 20:03:40,302 INFO namenode.FSNamesystem: fsLock is fair: true
+2022-12-06 20:03:40,302 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2022-12-06 20:03:40,331 INFO namenode.FSNamesystem: fsOwner             = archananikam (auth:SIMPLE)
+2022-12-06 20:03:40,331 INFO namenode.FSNamesystem: supergroup          = supergroup
+2022-12-06 20:03:40,331 INFO namenode.FSNamesystem: isPermissionEnabled = true
+2022-12-06 20:03:40,331 INFO namenode.FSNamesystem: HA Enabled: false
+2022-12-06 20:03:40,434 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-12-06 20:03:40,441 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-12-06 20:03:40,441 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-12-06 20:03:40,443 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-12-06 20:03:40,444 INFO blockmanagement.BlockManager: The block deletion will start around 2022 Dec 06 20:03:40
+2022-12-06 20:03:40,445 INFO util.GSet: Computing capacity for map BlocksMap
+2022-12-06 20:03:40,445 INFO util.GSet: VM type       = 64-bit
+2022-12-06 20:03:40,445 INFO util.GSet: 2.0% max memory 30.0 GB = 613.8 MB
+2022-12-06 20:03:40,445 INFO util.GSet: capacity      = 2^26 = 67108864 entries
+2022-12-06 20:03:40,479 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2022-12-06 20:03:40,479 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2022-12-06 20:03:40,483 INFO Configuration.deprecation: No unit for dfs.namenode.safemode.extension(30000) assuming MILLISECONDS
+2022-12-06 20:03:40,483 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2022-12-06 20:03:40,483 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2022-12-06 20:03:40,483 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2022-12-06 20:03:40,484 INFO blockmanagement.BlockManager: defaultReplication         = 3
+2022-12-06 20:03:40,484 INFO blockmanagement.BlockManager: maxReplication             = 512
+2022-12-06 20:03:40,484 INFO blockmanagement.BlockManager: minReplication             = 1
+2022-12-06 20:03:40,484 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2022-12-06 20:03:40,484 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2022-12-06 20:03:40,484 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2022-12-06 20:03:40,484 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2022-12-06 20:03:40,497 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2022-12-06 20:03:40,497 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2022-12-06 20:03:40,497 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2022-12-06 20:03:40,497 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2022-12-06 20:03:40,503 INFO util.GSet: Computing capacity for map INodeMap
+2022-12-06 20:03:40,503 INFO util.GSet: VM type       = 64-bit
+2022-12-06 20:03:40,504 INFO util.GSet: 1.0% max memory 30.0 GB = 306.9 MB
+2022-12-06 20:03:40,504 INFO util.GSet: capacity      = 2^25 = 33554432 entries
+2022-12-06 20:03:40,517 INFO namenode.FSDirectory: ACLs enabled? false
+2022-12-06 20:03:40,518 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2022-12-06 20:03:40,518 INFO namenode.FSDirectory: XAttrs enabled? true
+2022-12-06 20:03:40,518 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2022-12-06 20:03:40,522 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-12-06 20:03:40,523 INFO snapshot.SnapshotManager: SkipList is disabled
+2022-12-06 20:03:40,526 INFO util.GSet: Computing capacity for map cachedBlocks
+2022-12-06 20:03:40,526 INFO util.GSet: VM type       = 64-bit
+2022-12-06 20:03:40,526 INFO util.GSet: 0.25% max memory 30.0 GB = 76.7 MB
+2022-12-06 20:03:40,526 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2022-12-06 20:03:40,536 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-12-06 20:03:40,536 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2022-12-06 20:03:40,536 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-12-06 20:03:40,538 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2022-12-06 20:03:40,538 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-12-06 20:03:40,539 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2022-12-06 20:03:40,539 INFO util.GSet: VM type       = 64-bit
+2022-12-06 20:03:40,539 INFO util.GSet: 0.029999999329447746% max memory 30.0 GB = 9.2 MB
+2022-12-06 20:03:40,539 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2022-12-06 20:03:40,555 INFO namenode.FSImage: Allocated new BlockPoolId: BP-1061032813-198.202.102.11-1670385820551
+2022-12-06 20:03:40,564 INFO common.Storage: Storage directory /scratch/archananikam/job_17927180/namenode_data has been successfully formatted.
+2022-12-06 20:03:40,588 INFO namenode.FSImageFormatProtobuf: Saving image file /scratch/archananikam/job_17927180/namenode_data/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-12-06 20:03:40,667 INFO namenode.FSImageFormatProtobuf: Image file /scratch/archananikam/job_17927180/namenode_data/current/fsimage.ckpt_0000000000000000000 of size 407 bytes saved in 0 seconds .
+2022-12-06 20:03:40,680 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2022-12-06 20:03:40,683 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2022-12-06 20:03:40,684 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at exp-9-20/198.202.102.11
+************************************************************/
+WARNING: Attempting to start all Apache Hadoop daemons as archananikam in 10 seconds.
+WARNING: This is not a recommended production deployment configuration.
+WARNING: Use CTRL-C to abort.
+Starting namenodes on [exp-9-20]
+Starting datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:IpP06LVDwROoD0ldEZ5ckUa4/zeN/yFIx/9S3Kfx46Q.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/archananikam/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/archananikam/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Starting secondary namenodes [exp-9-20]
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+Starting resourcemanager
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+Starting nodemanagers
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:IpP06LVDwROoD0ldEZ5ckUa4/zeN/yFIx/9S3Kfx46Q.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/archananikam/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/archananikam/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+localhost: WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+rm: `/user/archananikam/*': No such file or directory
+Argument 0 :: /user/archananikam/input2/title.basics.tsv
+Argument 1 :: /user/archananikam/input2/imdb00-title-actors.csv
+Argument 2 :: /user/archananikam/input2/title.crew.tsv
+Argument 3 :: /user/archananikam/output
+2022-12-06 20:04:23,015 INFO client.RMProxy: Connecting to ResourceManager at exp-9-20/198.202.102.11:8032
+2022-12-06 20:04:23,233 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/archananikam/.staging/job_1670385846304_0001
+2022-12-06 20:04:23,397 INFO input.FileInputFormat: Total input files to process : 1
+2022-12-06 20:04:23,414 INFO input.FileInputFormat: Total input files to process : 1
+2022-12-06 20:04:23,419 INFO input.FileInputFormat: Total input files to process : 1
+2022-12-06 20:04:23,848 INFO mapreduce.JobSubmitter: number of splits:3
+2022-12-06 20:04:23,878 INFO Configuration.deprecation: mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+2022-12-06 20:04:24,366 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1670385846304_0001
+2022-12-06 20:04:24,367 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-12-06 20:04:24,467 INFO conf.Configuration: resource-types.xml not found
+2022-12-06 20:04:24,467 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-12-06 20:04:24,794 INFO impl.YarnClientImpl: Submitted application application_1670385846304_0001
+2022-12-06 20:04:24,815 INFO mapreduce.Job: The url to track the job: http://exp-9-20:8088/proxy/application_1670385846304_0001/
+2022-12-06 20:04:24,815 INFO mapreduce.Job: Running job: job_1670385846304_0001
+2022-12-06 20:04:29,871 INFO mapreduce.Job: Job job_1670385846304_0001 running in uber mode : false
+2022-12-06 20:04:29,872 INFO mapreduce.Job:  map 0% reduce 0%
+2022-12-06 20:04:42,920 INFO mapreduce.Job:  map 33% reduce 0%
+2022-12-06 20:04:45,930 INFO mapreduce.Job:  map 65% reduce 0%
+2022-12-06 20:04:49,939 INFO mapreduce.Job:  map 76% reduce 0%
+2022-12-06 20:04:51,945 INFO mapreduce.Job:  map 80% reduce 0%
+2022-12-06 20:04:57,955 INFO mapreduce.Job:  map 85% reduce 11%
+2022-12-06 20:05:02,963 INFO mapreduce.Job:  map 85% reduce 22%
+2022-12-06 20:05:03,965 INFO mapreduce.Job:  map 89% reduce 22%
+2022-12-06 20:05:09,975 INFO mapreduce.Job:  map 93% reduce 22%
+2022-12-06 20:05:15,985 INFO mapreduce.Job:  map 97% reduce 22%
+2022-12-06 20:05:19,991 INFO mapreduce.Job:  map 100% reduce 22%
+2022-12-06 20:05:21,995 INFO mapreduce.Job:  map 100% reduce 35%
+2022-12-06 20:05:22,997 INFO mapreduce.Job:  map 100% reduce 58%
+2022-12-06 20:05:28,007 INFO mapreduce.Job:  map 100% reduce 72%
+2022-12-06 20:05:29,008 INFO mapreduce.Job:  map 100% reduce 79%
+2022-12-06 20:05:34,017 INFO mapreduce.Job:  map 100% reduce 85%
+2022-12-06 20:05:35,018 INFO mapreduce.Job:  map 100% reduce 91%
+2022-12-06 20:05:39,024 INFO mapreduce.Job:  map 100% reduce 100%
+2022-12-06 20:05:39,026 INFO mapreduce.Job: Job job_1670385846304_0001 completed successfully
+2022-12-06 20:05:39,078 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=3046990052
+		FILE: Number of bytes written=4383398176
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1775567626
+		HDFS: Number of bytes written=461350
+		HDFS: Number of read operations=19
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=4
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=2
+		Launched map tasks=3
+		Launched reduce tasks=2
+		Data-local map tasks=3
+		Total time spent by all maps in occupied slots (ms)=151214
+		Total time spent by all reduces in occupied slots (ms)=204390
+		Total time spent by all map tasks (ms)=75607
+		Total time spent by all reduce tasks (ms)=102195
+		Total vcore-milliseconds taken by all map tasks=75607
+		Total vcore-milliseconds taken by all reduce tasks=102195
+		Total megabyte-milliseconds taken by all map tasks=154843136
+		Total megabyte-milliseconds taken by all reduce tasks=209295360
+	Map-Reduce Framework
+		Map input records=38315671
+		Map output records=30210733
+		Map output bytes=1274845755
+		Map output materialized bytes=1335274610
+		Input split bytes=753
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=9101808
+		Reduce shuffle bytes=1335274610
+		Reduce input records=30210733
+		Reduce output records=8858
+		Spilled Records=98544299
+		Shuffled Maps =6
+		Failed Shuffles=0
+		Merged Map outputs=6
+		GC time elapsed (ms)=465
+		CPU time spent (ms)=144110
+		Physical memory (bytes) snapshot=6969319424
+		Virtual memory (bytes) snapshot=19546816512
+		Total committed heap usage (bytes)=8598323200
+		Peak Map Physical memory (bytes)=1350475776
+		Peak Map Virtual memory (bytes)=3913060352
+		Peak Reduce Physical memory (bytes)=1481998336
+		Peak Reduce Virtual memory (bytes)=3920175104
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=461350
+Total time taken in miliseconds for execution :: 76647
+Total time taken in seconds for execution :: 1277
+WARNING: Stopping all Apache Hadoop daemons as archananikam in 10 seconds.
+WARNING: Use CTRL-C to abort.
+Stopping namenodes on [exp-9-20]
+Stopping datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:IpP06LVDwROoD0ldEZ5ckUa4/zeN/yFIx/9S3Kfx46Q.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/archananikam/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/archananikam/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Stopping secondary namenodes [exp-9-20]
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+Stopping nodemanagers
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:IpP06LVDwROoD0ldEZ5ckUa4/zeN/yFIx/9S3Kfx46Q.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/archananikam/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/archananikam/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+localhost: WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+localhost: WARNING: nodemanager did not stop gracefully after 5 seconds: Trying to kill with kill -9
+Stopping resourcemanager
+WARNING: YARN_LOG_DIR has been replaced by HADOOP_LOG_DIR. Using value of YARN_LOG_DIR.
+WARNING: YARN_PID_DIR has been replaced by HADOOP_PID_DIR. Using value of YARN_PID_DIR.
+Copying Hadoop logs back to /home/archananikam/expanse/logs...
+'/scratch/archananikam/job_17927180/logs' -> '/home/archananikam/expanse/logs'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-namenode-exp-9-20.out' -> '/home/archananikam/expanse/logs/hadoop-archananikam-namenode-exp-9-20.out'
+'/scratch/archananikam/job_17927180/logs/SecurityAuth-archananikam.audit' -> '/home/archananikam/expanse/logs/SecurityAuth-archananikam.audit'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-datanode-exp-9-20.out' -> '/home/archananikam/expanse/logs/hadoop-archananikam-datanode-exp-9-20.out'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-namenode-exp-9-20.log' -> '/home/archananikam/expanse/logs/hadoop-archananikam-namenode-exp-9-20.log'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-datanode-exp-9-20.log' -> '/home/archananikam/expanse/logs/hadoop-archananikam-datanode-exp-9-20.log'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-secondarynamenode-exp-9-20.out' -> '/home/archananikam/expanse/logs/hadoop-archananikam-secondarynamenode-exp-9-20.out'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-secondarynamenode-exp-9-20.log' -> '/home/archananikam/expanse/logs/hadoop-archananikam-secondarynamenode-exp-9-20.log'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-resourcemanager-exp-9-20.out' -> '/home/archananikam/expanse/logs/hadoop-archananikam-resourcemanager-exp-9-20.out'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-resourcemanager-exp-9-20.log' -> '/home/archananikam/expanse/logs/hadoop-archananikam-resourcemanager-exp-9-20.log'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-nodemanager-exp-9-20.out' -> '/home/archananikam/expanse/logs/hadoop-archananikam-nodemanager-exp-9-20.out'
+'/scratch/archananikam/job_17927180/logs/hadoop-archananikam-nodemanager-exp-9-20.log' -> '/home/archananikam/expanse/logs/hadoop-archananikam-nodemanager-exp-9-20.log'
+'/scratch/archananikam/job_17927180/logs/userlogs' -> '/home/archananikam/expanse/logs/userlogs'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/prelaunch.out' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/prelaunch.out'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/prelaunch.err' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/prelaunch.err'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/launch_container.sh' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/launch_container.sh'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/directory.info' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/directory.info'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/stdout' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/stdout'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/stderr' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/stderr'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/syslog' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/syslog'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/prelaunch.out' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/prelaunch.out'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/prelaunch.err' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/prelaunch.err'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/launch_container.sh' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/launch_container.sh'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/directory.info' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/directory.info'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/stdout' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/stdout'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/stderr' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/stderr'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/syslog' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/syslog'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/prelaunch.out' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/prelaunch.out'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/prelaunch.err' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/prelaunch.err'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/launch_container.sh' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/launch_container.sh'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/directory.info' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/directory.info'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/stdout' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/stdout'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/stderr' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/stderr'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/syslog' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/syslog'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/syslog.shuffle' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/syslog.shuffle'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/prelaunch.out' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/prelaunch.out'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/prelaunch.err' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/prelaunch.err'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/launch_container.sh' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/launch_container.sh'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/directory.info' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/directory.info'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/stdout' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/stdout'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/stderr' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/stderr'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/syslog' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/syslog'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/prelaunch.out' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/prelaunch.out'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/prelaunch.err' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/prelaunch.err'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/launch_container.sh' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/launch_container.sh'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/directory.info' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/directory.info'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/stdout' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/stdout'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/stderr' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/stderr'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/syslog' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/syslog'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/prelaunch.out' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/prelaunch.out'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/prelaunch.err' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/prelaunch.err'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/launch_container.sh' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/launch_container.sh'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/directory.info' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/directory.info'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/stdout' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/stdout'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/stderr' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/stderr'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/syslog' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/syslog'
+'/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/syslog.shuffle' -> '/home/archananikam/expanse/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/syslog.shuffle'
+removed '/scratch/archananikam/job_17927180/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000111'
+removed '/scratch/archananikam/job_17927180/tmp/dfs/namesecondary/current/fsimage_0000000000000000111.md5'
+removed '/scratch/archananikam/job_17927180/tmp/dfs/namesecondary/current/fsimage_0000000000000000000'
+removed '/scratch/archananikam/job_17927180/tmp/dfs/namesecondary/current/fsimage_0000000000000000000.md5'
+removed '/scratch/archananikam/job_17927180/tmp/dfs/namesecondary/current/fsimage_0000000000000000111'
+removed '/scratch/archananikam/job_17927180/tmp/dfs/namesecondary/current/VERSION'
+removed directory '/scratch/archananikam/job_17927180/tmp/dfs/namesecondary/current'
+removed directory '/scratch/archananikam/job_17927180/tmp/dfs/namesecondary'
+removed directory '/scratch/archananikam/job_17927180/tmp/dfs'
+removed directory '/scratch/archananikam/job_17927180/tmp'
+removed directory '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/tmp'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/scanner.cursor'
+removed directory '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/rbw'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/dfsUsed'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741830'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741827'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741835_1011.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741849'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741834'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741830_1006.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741838_1014.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741836_1012.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741826'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741832_1008.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741839_1015.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741829_1005.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741836'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741848_1024.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741827_1003.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741850'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741849_1025.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741828'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741839'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741834_1010.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741835'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741847'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741831_1007.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741846'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741825'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741831'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741832'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741837_1013.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741833'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741850_1026.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741847_1023.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741833_1009.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741848'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741829'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741828_1004.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741846_1022.meta'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741838'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0/blk_1073741837'
+removed directory '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0/subdir0'
+removed directory '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized/subdir0'
+removed directory '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/finalized'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current/VERSION'
+removed directory '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551/current'
+removed directory '/scratch/archananikam/job_17927180/hdfs_data/current/BP-1061032813-198.202.102.11-1670385820551'
+removed '/scratch/archananikam/job_17927180/hdfs_data/current/VERSION'
+removed directory '/scratch/archananikam/job_17927180/hdfs_data/current'
+removed directory '/scratch/archananikam/job_17927180/hdfs_data'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-nodemanager-exp-9-20.log'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/launch_container.sh'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/stdout'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/syslog'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/directory.info'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/stderr'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/prelaunch.err'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/prelaunch.out'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005/syslog.shuffle'
+removed directory '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000005'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/launch_container.sh'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/stdout'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/syslog'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/directory.info'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/stderr'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/prelaunch.err'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003/prelaunch.out'
+removed directory '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000003'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/launch_container.sh'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/stdout'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/syslog'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/directory.info'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/stderr'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/prelaunch.err'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004/prelaunch.out'
+removed directory '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000004'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/launch_container.sh'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/stdout'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/syslog'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/directory.info'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/stderr'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/prelaunch.err'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/prelaunch.out'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006/syslog.shuffle'
+removed directory '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000006'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/launch_container.sh'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/stdout'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/syslog'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/directory.info'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/stderr'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/prelaunch.err'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001/prelaunch.out'
+removed directory '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000001'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/launch_container.sh'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/stdout'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/syslog'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/directory.info'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/stderr'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/prelaunch.err'
+removed '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002/prelaunch.out'
+removed directory '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001/container_1670385846304_0001_01_000002'
+removed directory '/scratch/archananikam/job_17927180/logs/userlogs/application_1670385846304_0001'
+removed directory '/scratch/archananikam/job_17927180/logs/userlogs'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-resourcemanager-exp-9-20.log'
+removed '/scratch/archananikam/job_17927180/logs/SecurityAuth-archananikam.audit'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-secondarynamenode-exp-9-20.out'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-namenode-exp-9-20.log'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-nodemanager-exp-9-20.out'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-resourcemanager-exp-9-20.out'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-datanode-exp-9-20.log'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-secondarynamenode-exp-9-20.log'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-datanode-exp-9-20.out'
+removed '/scratch/archananikam/job_17927180/logs/hadoop-archananikam-namenode-exp-9-20.out'
+removed directory '/scratch/archananikam/job_17927180/logs'
+removed directory '/scratch/archananikam/job_17927180/mapred_scratch/filecache'
+removed directory '/scratch/archananikam/job_17927180/mapred_scratch/usercache/archananikam/appcache'
+removed directory '/scratch/archananikam/job_17927180/mapred_scratch/usercache/archananikam/filecache'
+removed directory '/scratch/archananikam/job_17927180/mapred_scratch/usercache/archananikam'
+removed directory '/scratch/archananikam/job_17927180/mapred_scratch/usercache'
+removed directory '/scratch/archananikam/job_17927180/mapred_scratch/nmPrivate'
+removed directory '/scratch/archananikam/job_17927180/mapred_scratch'
+removed '/scratch/archananikam/job_17927180/namenode_data/current/edits_0000000000000000001-0000000000000000111'
+removed '/scratch/archananikam/job_17927180/namenode_data/current/seen_txid'
+removed '/scratch/archananikam/job_17927180/namenode_data/current/fsimage_0000000000000000000'
+removed '/scratch/archananikam/job_17927180/namenode_data/current/fsimage_0000000000000000000.md5'
+removed '/scratch/archananikam/job_17927180/namenode_data/current/edits_inprogress_0000000000000000112'
+removed '/scratch/archananikam/job_17927180/namenode_data/current/VERSION'
+removed directory '/scratch/archananikam/job_17927180/namenode_data/current'
+removed directory '/scratch/archananikam/job_17927180/namenode_data'
+removed directory '/scratch/archananikam/job_17927180/pids'
